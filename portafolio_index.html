@@ -1,0 +1,126 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portafolio Profesional - Elvis Riquelme M.</title>
+  <style>
+    :root{--bg:#f7f7f9;--card:#ffffff;--accent:#0b63b8;--muted:#6b7280;--border:#e6e7ea}
+    body{font-family:Inter,system-ui,Segoe UI,Arial;line-height:1.6;background:var(--bg);color:#111;margin:0;padding:0;}
+    header{background:linear-gradient(90deg, rgba(11,99,184,0.12), rgba(11,99,184,0.04));padding:40px 20px;border-bottom:1px solid var(--border)}
+    .container{max-width:980px;margin:0 auto;padding:24px}
+    .hero{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+    .avatar{width:120px;height:120px;border-radius:16px;background:var(--card);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);border:1px solid var(--border);}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0;color:var(--muted)}
+    nav{margin-top:12px}
+    nav a{margin-right:12px;color:var(--accent);text-decoration:none;font-weight:600}
+    main{padding:24px 0}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px;margin-bottom:16px;box-shadow:0 1px 2px rgba(16,24,40,0.03)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+    .meta{color:var(--muted);font-size:14px;margin-bottom:8px}
+    .project-title{display:flex;justify-content:space-between;align-items:center;gap:12px}
+    .project-title h3{margin:0;font-size:18px}
+    .tech{font-size:13px;color:var(--muted);margin-top:8px}
+    footer{text-align:center;padding:20px 0;color:var(--muted);font-size:14px}
+    a.cta{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+    @media (max-width:520px){.hero{flex-direction:column;align-items:flex-start}.avatar{width:88px;height:88px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="hero">
+        <div class="avatar" aria-hidden="true">TN</div>
+        <div>
+          <h1>Elvis Riquelme</h1>
+          <p class="lead">Desarrollo de software | Analista de Datos | Ingeniería de Datos. Soy Elvis, me especializo en crear soluciones limpias y escalables, con foco en buenas prácticas, pruebas y documentación. Busco oportunidades para aplicar mis habilidades en proyectos reales y colaborar en equipos multidisciplinarios.</p>
+          <nav aria-label="Navegación principal">
+            <a href="#proyectos">Proyectos</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#instrucciones" class="cta">Cómo ver el código</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="sobre-mi" class="card" aria-labelledby="sobre-mi-title">
+      <h2 id="sobre-mi-title">Presentación personal</h2>
+      <p class="meta">Nombre: Elvis · Especialización: Ingenieria de Datos / Analista de Datos</p>
+      <p>Breve presentación: Soy un profesional con formación en el informatica, con experiencia en proyectos que involucran el desarrollo de software de gestion y control. Me interesa trabajar en soluciones que generen impacto y aprendizaje continuo. Objetivos profesionales: obtener experiencia en la manipulacion e interpretacion de los datos, contribuir a proyectos open-source y crecer en roles de liderazgo técnico.</p>
+    </section>
+
+    <section id="proyectos" class="card" aria-labelledby="proyectos-title">
+      <h2 id="proyectos-title">Proyectos destacados</h2>
+
+      <div class="grid">
+        <!-- Proyecto 1 -->
+        <article class="card" aria-labelledby="p1-title">
+          <div class="project-title">
+            <h3 id="p1-title">Proyecto 1 — Control de Combustible</h3>
+            <span class="meta">Duración: 3 meses</span>
+          </div>
+          <p class="meta">Descripción: Software de control de compras y entregas de combustibles a la flota de camiones de Transportes san pablo.</p>
+          <p><strong>Objetivos:</strong></p>
+          <ul>
+            <li>Implementar una solucion para el control de consumos y analisis de estos.</li>
+            <li>Generar informes de analisis de comras y rendimientos.</li>
+          </ul>
+          <p><strong>Tecnologías:</strong> Visual Basic .net, SQL Server.</p>
+          <p><strong>Reflexión:</strong> Aprendí a diseñar un mejor control para llevar los rendimientos y el calculo de consumos dentro de las distintas sucursales a lo largo del pais.</p>
+        </article>
+
+        <!-- Proyecto 2 -->
+        <article class="card" aria-labelledby="p2-title">
+          <div class="project-title">
+            <h3 id="p2-title">Proyecto 2 — Sistema de Control de Bodega</h3>
+            <span class="meta">Duración: 2 meses</span>
+          </div>
+          <p class="meta">Descripción: Software para el control de entradas y salidas de las bodegas de repuestos.</p>
+          <p><strong>Objetivos:</strong></p>
+          <ul>
+            <li>Generar ordenes de ingreso a taller, establecer tipo de mantencion y repuestos ocupados.</li>
+            <li>Stock automatico, con stock critico y aviso por email.</li>
+          </ul>
+          <p><strong>Tecnologías:</strong> Visual Basic .net, SQL Server, Gps Chile.</p>
+          <p><strong>Reflexión:</strong> Mejoré mi comprensión de la arquitectura cliente-servidor.</p>
+        </article>
+
+        <!-- Proyecto 3 -->
+        <article class="card" aria-labelledby="p3-title">
+          <div class="project-title">
+            <h3 id="p3-title">Proyecto 3 — Modelado Predictivo</h3>
+            <span class="meta">Duración: 1.5 meses</span>
+          </div>
+          <p class="meta">Descripción: Modelo de clasificación para predecir churn de clientes basado en señales de uso.</p>
+          <p><strong>Objetivos:</strong></p>
+          <ul>
+            <li>Explorar datos, seleccionar features y validar modelos.</li>
+            <li>Crear un pipeline reproducible para entrenamiento y evaluación.</li>
+          </ul>
+          <p><strong>Tecnologías:</strong> Python, scikit-learn, pandas, MLflow, Docker.</p>
+          <p><strong>Reflexión:</strong> Entendí mejor la importancia de la validación temporal y cómo asegurar que un modelo generalice fuera del set de entrenamiento.</p>
+        </article>
+      </div>
+    </section>
+
+   
+
+    <section id="contacto" class="card" aria-labelledby="contacto-title">
+      <h2 id="contacto-title">Contacto</h2>
+      <p class="meta">Correo: <a href="mailto:alonso.riquelme@gmail.com">alonso.riquelme@gmail.com</a> · GitHub: <a href="github.com/tekearm/Elvis-Riquelme-Portafolio" target="_blank" rel="noopener">github.com/tekearm/Elvis-Riquelme-Portafolio</a></p>
+      <p>Puedes contactarme para revisar proyectos, colaboraciones o consultas sobre ofertas laborales.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Plantilla de portafolio profesional — creado para la actividad académica. Reemplaza los textos entre corchetes con tu información real.</p>
+    </div>
+  </footer>
+</body>
+</html>
